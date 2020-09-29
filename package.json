@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/hisman/adonis-hashids/issues"
   },
-  "homepage": "https://github.com/hisman/adonis-hashids#readme"
+  "homepage": "https://github.com/hisman/adonis-hashids#readme",
+  "devDependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.13"
+  },
+  "dependencies": {
+    "hashids": "^2.2.1"
+  }
 }
