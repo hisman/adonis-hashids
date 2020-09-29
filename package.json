@@ -1,0 +1,25 @@
+{
+  "name": "@hisman/adonis-hashids",
+  "version": "1.0.0",
+  "description": "Hashids for AdonisJS Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisman/adonis-hashids.git"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis",
+    "adonis-framework",
+    "hashids"
+  ],
+  "author": "Hisman Nata Saputra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisman/adonis-hashids/issues"
+  },
+  "homepage": "https://github.com/hisman/adonis-hashids#readme"
+}
