@@ -1,6 +1,6 @@
 {
   "name": "@hisman/adonis-hashids",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hashids for AdonisJS Framework.",
   "main": "index.js",
   "scripts": {

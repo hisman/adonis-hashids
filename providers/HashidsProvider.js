@@ -20,6 +20,7 @@ class HashidsProvider extends ServiceProvider {
     })
 
     this.app.bind('Hisman/Traits/HashidsTrait', () => require('../src/Traits/HashidsTrait'))
+    this.app.alias('Hisman/Traits/HashidsTrait', 'HashidsTrait')
   }
 
   /**
