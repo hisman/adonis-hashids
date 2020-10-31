@@ -11,7 +11,7 @@ class HashidsProvider extends ServiceProvider {
    * @return {void}
    */
   register () {
-    this.app.singleton('Hisman/Services/Hashids', () => {
+    this.app.singleton('Adonis/Addons/Hisman/Services/Hashids', () => {
       const Config = this.app.use('Config')
       const Hashids = require('hashids/cjs')
       const { salt, minLength, alphabet } = Config.get('hashids')
@@ -19,8 +19,8 @@ class HashidsProvider extends ServiceProvider {
       return new Hashids(salt, minLength, alphabet )
     })
 
-    this.app.bind('Hisman/Traits/HashidsTrait', () => require('../src/Traits/HashidsTrait'))
-    this.app.alias('Hisman/Traits/HashidsTrait', 'HashidsTrait')
+    this.app.bind('Adonis/Addons/Hisman/Traits/HashidsTrait', () => require('../src/Traits/HashidsTrait'))
+    this.app.alias('Adonis/Addons/Hisman/Traits/HashidsTrait', 'HashidsTrait')
   }
 
   /**
