@@ -2,6 +2,7 @@
 
 const path = require('path')
 
+
 module.exports = async function (cli) {
   try {
     await cli.copy(
@@ -9,6 +10,12 @@ module.exports = async function (cli) {
       path.join(cli.helpers.configPath(), 'hashids.js')
     )
     cli.command.completed('create', 'config/hashids.js')
+
+    await cli.copy(
+      path.join(__dirname, './src/Traits/HashidsTrait.js'),
+      path.join(cli.helpers.appRoot(), '/Models/Traits/HashidsTrait.js')
+    )
+    cli.command.completed('create', 'HashidsTrait.js')
   } catch (error) {
     // ignore error
   }
