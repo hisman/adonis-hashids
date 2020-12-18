@@ -13,7 +13,7 @@ module.exports = async function (cli) {
 
     await cli.copy(
       path.join(__dirname, './src/Traits/HashidsTrait.js'),
-      path.join(cli.helpers.appRoot(), '/Models/Traits/HashidsTrait.js')
+      path.join(cli.helpers.appRoot(), '/app/Models/Traits/HashidsTrait.js')
     )
     cli.command.completed('create', 'HashidsTrait.js')
   } catch (error) {
