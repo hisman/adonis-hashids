@@ -18,9 +18,6 @@ class HashidsProvider extends ServiceProvider {
 
       return new Hashids(salt, minLength, alphabet )
     })
-
-    this.app.bind('Adonis/Addons/Hisman/Traits/HashidsTrait', () => require('../src/Traits/HashidsTrait'))
-    this.app.alias('Adonis/Addons/Hisman/Traits/HashidsTrait', 'HashidsTrait')
   }
 
   /**
