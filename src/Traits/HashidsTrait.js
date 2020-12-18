@@ -1,6 +1,6 @@
 'use strict'
 
-const Hashids = use('Hisman/Services/Hashids')
+const Hashids = use('Adonis/Addons/Hisman/Services/Hashids')
 
 class HashidsTrait {
   register (Model, customOptions = {}) {
